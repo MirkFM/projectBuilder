@@ -1,0 +1,31 @@
+{
+  "name": "project-builder",
+  "version": "0.0.1",
+  "description": "Module project builder",
+  "author": "MirkFM",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-load-plugins": "^1.5.0",
+    "require-dir": "^0.3.1"
+  },
+  "scripts": {
+    "build": "npm install && gulp build",
+    "dev": "gulp",
+    "rebuild": "gulp clear && gulp build",
+    "clear": "gulp clear",
+    "rebuild:fonts": "gulp clear:fonts && gulp build:fonts",
+    "rebuild:html": "gulp clear:html && gulp build:html",
+    "rebuild:image": "gulp clear:image && gulp build:image",
+    "rebuild:script": "gulp clear:script && gulp build:script",
+    "rebuild:style": "gulp clear:style && gulp build:style",
+    "rebuild:vendor": "gulp clear:vendor && gulp build:vendor",
+    "clear:fonts": "gulp clear:fonts",
+    "clear:html": "gulp clear:html",
+    "clear:image": "gulp clear:image",
+    "clear:script": "gulp clear:script",
+    "clear:style": "gulp clear:style",
+    "clear:vendor": "gulp clear:vendor"
+  }
+}
